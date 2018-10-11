@@ -27,7 +27,7 @@ function displayGitHubSearchData(data) {
 }
 
 function watchSubmit() {
-  $('.js-search-form').submit(event => {
+  $('.js-search-form').submit(function(event) {
     event.preventDefault();
     const queryTarget = $(event.currentTarget).find('.js-query');
     const query = queryTarget.val();
