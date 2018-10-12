@@ -5,7 +5,7 @@ const GITHUB_SEARCH_URL = 'https://api.github.com/search/repositories';
 function getDataFromApi(searchTerm, callback) {
   const query = {
     q: `${searchTerm} in:name`,
-    per_page: 5
+    per_page: 4
   }
   $.getJSON(GITHUB_SEARCH_URL, query, callback);
 }
