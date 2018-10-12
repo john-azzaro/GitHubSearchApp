@@ -36,4 +36,12 @@ function watchSubmit() {
   });
 }
 
-$(watchSubmit);
+function setUpEventHandlers() {
+  watchSubmit();
+}
+
+function initializeApp() {
+  setUpEventHandlers()
+}
+
+$(initializeApp)
