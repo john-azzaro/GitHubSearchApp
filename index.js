@@ -31,7 +31,6 @@ function watchSubmit() {
     event.preventDefault();
     const queryTarget = $(event.currentTarget).find('.js-query');
     const query = queryTarget.val();
-    // clear out the input
     queryTarget.val("");
     getDataFromApi(query, displayGitHubSearchData);
   });
